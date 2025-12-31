@@ -1,2 +1,2 @@
 # kpop-stats
-Crunch K-pop streaming data based on Spotify streaming history.
+[WIP] Crunch K-pop streaming data based on Spotify streaming history.
