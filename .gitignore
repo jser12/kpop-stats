@@ -3,3 +3,4 @@ output/
 arc.R
 tests/
 logos/members/**/
+.Rproj.user
