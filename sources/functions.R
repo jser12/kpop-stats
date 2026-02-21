@@ -36,6 +36,11 @@ create_spotigeek <- function() {
     window_data <- add_groupcol(window_data)
   }
   
+  # identify available logos
+  available_logos <- list.files("logos", pattern = "\\.png$", recursive = TRUE) %>% 
+    basename() %>% 
+    tools::file_path_sans_ext()
+  
   folder_logos <- if ("solos" %in% cfg$filter_by) {
     "https://github.com/jser12/kpop-stats/blob/main/logos/members/"
   } else {
@@ -45,7 +50,7 @@ create_spotigeek <- function() {
   #  prepare Flourish format 
   window_data_wide <- window_data %>% 
     arrange(date) %>%
-    mutate(logo = paste0(folder_logos, URLencode(artist), ".png?raw=true")) %>% # URLencode() deals with percent-encoding (%20) characters
+    mutate(logo = ifelse(artist %in% available_logos, paste0(folder_logos, URLencode(artist), ".png?raw=true"), "")) %>% # URLencode() deals with percent-encoding (%20) characters
     pivot_wider(names_from = date, values_from = value_window) %>% 
     arrange(desc(pick(last_col())))
   
