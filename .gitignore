@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+arc/
+output/
+arc.R
+tests/
+logos/members/**/
