@@ -84,7 +84,7 @@ dict_kpop_gg <- list(
   "i-dle" = c("Soyeon","Miyeon","Minnie","Yuqi","Shuhua","Soojin"),
   "aespa" = c("Karina","Giselle","Winter","NingNing"),
   "STAYC" = c("Sieun","Isa","Seeun","Yoon","J"), # excluded: # excluded: "Sumin" (problematic re: SONAMOO Sumin and soloist Sumin) 
-  "IVE" = c("AnYujin","Gaeul","Rei","Jang Wonyoung","Liz","Leeseo"),
+  "IVE" = c("AnYujin","Gaeul","Rei","JangWonyoung","Liz","Leeseo"),
   "LE SSERAFIM" = c("Kim Chaewon","Sakura","Huh Yunjin","Kazuha","Hong Eunchae","Kim Garam"),
   "NewJeans" = c("Minji","Hanni","Danielle","Haerin","Hyein"),
   "NMIXX" = c("Haewon","Lily","Sullyoon","Bae","Jiwoo","Kyujin","Jinni"),
